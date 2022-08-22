@@ -11,4 +11,4 @@ My favorite color:
 
 > Green
 
-Thank you so much for reading! ☺
+Thank you so much for reading! This was changed to see if user in Github is now displayed correctly.
