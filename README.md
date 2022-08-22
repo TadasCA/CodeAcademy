@@ -1,2 +1,14 @@
-# CodeAcademy
-First repository for beginner projects.
+### My first repository is awesome!
+
+I'm TadasCA and here it's my first GitHub repository.
+If you see this file on my project, it's because I'm learning Git.
+
+My mood:
+
+> Curious
+
+My favorite color:
+
+> Green
+
+Thank you so much for reading! ☺
