@@ -1,0 +1,57 @@
+.main {
+  margin-left: 2em;
+  width: 500px;
+  border: solid rgb(175, 175, 175);
+  border-radius: 2em;
+  padding-left: 10px;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px 4px 60px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 5em;
+  }
+.button:hover{
+  background-color: #327034;
+}  
+.gender{
+    height: fit-content;
+    width: 210px;
+    padding-left: 9em;
+}
+.name, .card{
+    width: 350px;
+    display: inline-block;
+    text-align: right;
+}
+.payment{
+    display: inline-block;
+    text-align: right;
+}
+#cardNumber, #expDate, #card{
+  width: 200px;
+ }
+input:valid {
+  outline: 2px solid green;
+}
+input:invalid {
+  outline: 2px solid red;
+}
+input:focus {
+  outline: 2px solid yellow;
+}
+input:focus[type="number"]{
+  outline: 2px solid yellow;
+}
+#cardNumber:out-of-range{
+  outline-color: red;
+}   
+#cardNumber:in-range{
+  outline-color: green;
+}
