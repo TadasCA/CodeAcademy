@@ -1,0 +1,247 @@
+body {
+  background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
+  margin-left: 5px;
+}
+
+.navbar {
+  padding: 2rem 1rem;
+}
+.navbar img.mobile-menu {
+  width: 8%;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+  font-size: 150%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+.hero {
+  display: block;
+  margin-bottom: 3.5em;
+  background-image: url(assets/graphic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 300px 80%;
+}
+.hero .hero-information {
+  padding-right: 35%;
+}
+.hero .hero-information p {
+  font-size: larger;
+}
+.hero .subhead {
+  text-transform: uppercase;
+  color: rgb(228, 66, 177);
+  letter-spacing: 0.2em;
+  font-size: medium;
+}
+.hero .primary-cta {
+  border: 5px solid;
+  border-image: url("assets/background.svg") 20 round;
+  color: black;
+  text-decoration: none;
+  padding: 0.8em 2.4em;
+  font-weight: bold;
+  border-radius: 5em;
+}
+.hero p {
+  padding-bottom: 2em;
+  color: #777777;
+}
+
+.promo {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 400;
+}
+.promo h2 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.companies .container {
+  display: grid;
+  grid: auto auto/auto auto;
+  gap: 25px;
+}
+.companies .OpenDoor {
+  display: none;
+}
+
+.NFTS ul {
+  display: flex;
+}
+.NFTS ul li {
+  width: 290px;
+  margin: 0px 20px;
+}
+.NFTS ul li img {
+  margin: 0;
+  padding: 0;
+}
+.NFTS ul .left-column {
+  color: #777777;
+  font-size: small;
+}
+.NFTS ul .left-column span {
+  color: rgb(255, 140, 0);
+}
+.NFTS ul .left-column .name-price {
+  color: #000;
+  font-size: large;
+}
+.NFTS ul .right-column span {
+  color: #000;
+  font-size: large;
+}
+.NFTS ul .right-column img {
+  margin-right: 0px;
+}
+.NFTS ul .right-column p {
+  color: #777777;
+  font-size: small;
+}
+.NFTS .NFT-info {
+  background-color: #EEEEEE;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 120px;
+  max-width: 270px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.auction-description h2 {
+  margin: 0.2em auto;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.Launching-soon {
+  display: flex;
+  margin-bottom: 1.5em;
+  background-image: url(assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 300px 100px;
+  border-top: solid 1px #EEEEEE;
+  border-bottom: solid 1px #EEEEEE;
+}
+.Launching-soon .hero-information {
+  padding-right: 45%;
+}
+.Launching-soon .subhead {
+  text-transform: uppercase;
+  color: rgb(228, 66, 177);
+  letter-spacing: 0.2em;
+  font-size: medium;
+}
+.Launching-soon .primary-cta {
+  border: 5px solid;
+  border-image: url("assets/background.svg") 20 round;
+  color: black;
+  text-decoration: none;
+  padding: 0.8em 2.4em;
+  font-weight: bold;
+  border-radius: 5em;
+}
+.Launching-soon p {
+  padding-bottom: 2em;
+  color: #777777;
+}
+
+.contact {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.contact p {
+  color: #777777;
+}
+.contact img {
+  padding: 5px;
+}
+
+.Links {
+  display: inline-block;
+}
+.Links table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+.Links th {
+  color: #777777;
+  padding: 10px 0px;
+}
+.Links td, .Links tr {
+  color: #777777;
+  padding: 10px 0px;
+}
+
+.legal p {
+  color: #CCCCCC;
+  padding-bottom: 50px;
+}
+.legal span {
+  display: none;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 1em;
+}
+nav li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
