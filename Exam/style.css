@@ -1,0 +1,411 @@
+html, body {
+  max-width: 100%;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  margin-left: 5px;
+}
+
+.navbar {
+  padding: 2rem 1rem;
+}
+.navbar img.mobile-menu {
+  width: 8%;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+  font-size: 150%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+.hero {
+  display: block;
+  margin-bottom: 3.5em;
+  background-image: url(assets/graphic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 15em -2em;
+}
+.hero .hero-information {
+  padding-right: 35%;
+}
+.hero .hero-information .subhead {
+  text-transform: uppercase;
+  color: #FF3998;
+  letter-spacing: 0.2em;
+  font-size: medium;
+}
+.hero .hero-information .primary-cta {
+  border: 5px solid;
+  border-image: url("assets/background.svg") 20 round;
+  color: #111111;
+  text-decoration: none;
+  padding: 0.8em 2.4em;
+  font-weight: bold;
+  border-radius: 5em;
+}
+.hero .hero-information p {
+  padding-bottom: 2em;
+  color: #777777;
+  font-size: larger;
+}
+
+.promo {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 24px;
+  font-weight: 400;
+}
+.promo h2 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.companies {
+  margin-left: 2em;
+}
+.companies .container {
+  display: grid;
+  grid: auto auto/auto auto;
+  gap: 25px;
+}
+.companies .OpenDoor {
+  display: none;
+}
+
+.auction-description {
+  margin-left: 2em;
+}
+
+.NFTS {
+  overflow-x: auto;
+}
+.NFTS ul {
+  display: flex;
+}
+.NFTS ul li {
+  width: 290px;
+  margin: 0px 20px;
+}
+.NFTS ul li img {
+  margin: 0;
+  padding: 0;
+}
+.NFTS ul .NFT-info .left-column {
+  color: #777777;
+  font-size: small;
+}
+.NFTS ul .NFT-info .left-column span {
+  color: #FF8139;
+}
+.NFTS ul .NFT-info .left-column .name-price {
+  color: #111111;
+  font-size: large;
+}
+.NFTS ul .NFT-info .right-column span {
+  color: #111111;
+  font-size: large;
+}
+.NFTS ul .NFT-info .right-column img {
+  margin-right: 0px;
+}
+.NFTS ul .NFT-info .right-column p {
+  color: #777777;
+  font-size: small;
+}
+.NFTS .NFT-info {
+  background-color: #EEEEEE;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 120px;
+  max-width: 270px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.auction-description h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.auction-description ul {
+  padding: 0;
+}
+.auction-description ul :first-child {
+  margin-left: 0;
+}
+
+.Launching-soon {
+  display: flex;
+  margin-bottom: 1.5em;
+  background-image: url(assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 18em 10px;
+  border-top: solid 1px #EEEEEE;
+  border-bottom: solid 1px #EEEEEE;
+}
+.Launching-soon .hero-information {
+  padding-right: 40%;
+}
+.Launching-soon .subhead {
+  text-transform: uppercase;
+  color: #FF3998;
+  letter-spacing: 0.2em;
+  font-size: medium;
+}
+.Launching-soon .primary-cta {
+  border: 5px solid;
+  border-image: url("assets/background.svg") 20 round;
+  color: #111111;
+  text-decoration: none;
+  padding: 0.8em 2.4em;
+  font-weight: bold;
+  border-radius: 5em;
+}
+.Launching-soon p {
+  padding-bottom: 2em;
+  color: #777777;
+}
+
+.contact {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.contact p {
+  color: #777777;
+}
+.contact img {
+  padding: 5px;
+}
+
+.Links {
+  display: inline-block;
+}
+.Links table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+.Links th {
+  color: #777777;
+  padding: 10px 0px;
+}
+.Links td, .Links tr {
+  color: #777777;
+  padding: 10px 0px;
+}
+
+.legal {
+  margin-left: 2em;
+}
+.legal p {
+  color: #CCCCCC;
+  padding-bottom: 50px;
+}
+.legal span {
+  display: none;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 1em;
+}
+nav li a {
+  color: #111111;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar img {
+    position: fixed;
+    margin-left: 2em;
+  }
+  .navbar nav {
+    display: flex;
+    background: none;
+    justify-content: flex-end;
+  }
+  ul {
+    display: flex;
+    margin-top: 0;
+    margin-right: 1em;
+  }
+  ul a {
+    color: #777777;
+  }
+  .Sign-up-cta {
+    color: #FF3998;
+  }
+  .hero {
+    display: block;
+    margin-left: 2em;
+    margin-bottom: 3.5em;
+    background-image: url(assets/graphic.png);
+    background-repeat: no-repeat;
+    background-size: 30em;
+    background-position: 70% 40%;
+  }
+  .hero .hero-information {
+    padding-right: 50%;
+  }
+  .hero .hero-information .subhead {
+    text-transform: uppercase;
+    color: #FF3998;
+    letter-spacing: 0.2em;
+    font-size: medium;
+  }
+  .hero .hero-information .primary-cta {
+    border: 5px solid;
+    border-image: url("assets/background.svg") 20 round;
+    color: #111111;
+    text-decoration: none;
+    padding: 0.8em 2.4em;
+    font-weight: bold;
+    border-radius: 5em;
+  }
+  .hero .hero-information p {
+    padding-bottom: 2em;
+    color: #777777;
+    font-size: larger;
+  }
+  .hero .hero-information h1 {
+    font-size: 72px;
+  }
+  .promo {
+    margin: 2em;
+    background-image: url(assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    padding-top: 4em;
+    padding-left: 2em;
+  }
+  .promo h2 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+  .companies .container {
+    margin-left: 2em;
+    margin-right: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .companies .container .OpenDoor {
+    display: flex;
+  }
+  .auction {
+    margin-left: 2em;
+  }
+  .Launching-soon {
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-image: url(assets/upsell-footer-image.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 60% 80%;
+    border-top: solid 1px #EEEEEE;
+    border-bottom: solid 1px #EEEEEE;
+  }
+  .Launching-soon .hero-information {
+    padding-right: 55%;
+  }
+  .Launching-soon .subhead {
+    text-transform: uppercase;
+    color: #FF3998;
+    letter-spacing: 0.2em;
+    font-size: medium;
+  }
+  .Launching-soon .primary-cta {
+    border: 5px solid;
+    border-image: url("assets/background.svg") 20 round;
+    color: #111111;
+    text-decoration: none;
+    padding: 0.8em 2.4em;
+    font-weight: bold;
+    border-radius: 5em;
+  }
+  .Launching-soon p {
+    padding-bottom: 2em;
+    color: #777777;
+  }
+  .More-information {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .More-information .Links {
+    display: flex;
+  }
+  .legal {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+  }
+  .legal p {
+    padding-bottom: 50px;
+    color: #CCCCCC;
+  }
+  .legal span {
+    display: flex;
+    color: #CCCCCC;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
