@@ -1,0 +1,421 @@
+$dark1: #111111;
+$dark2: #555555;
+$dark3: #777777;
+$dark4: #999999;
+$light1: #FFFFFF;
+$light2: #EEEEEE;
+$light3: #CCCCCC;
+$orange: #FF8139;
+$pink: #FF3998;
+
+
+@mixin LaunchingSoon {
+    text-transform: uppercase;
+    color: $pink;
+    letter-spacing: 0.2em;
+    font-size: medium;
+}
+
+@mixin SignUp {
+    border: 5px solid;
+    border-image: url("assets/background.svg") 20 round;
+    color: $dark1;
+    text-decoration: none;
+    padding: 0.8em 2.4em;
+    font-weight: bold;
+    border-radius: 5em; //kodel neveikia?!
+}
+
+html, body{
+    max-width: 100%;
+}
+
+body{
+    background-color: $light1;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+}
+
+.navbar{
+    padding: 2rem 1rem;
+
+    img.mobile-menu {
+        width: 8%;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+.mobile-menu {
+    cursor: pointer;
+    font-size: 150%;
+    }
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+h1 {
+    font-size: 3.5em;
+}
+.hero {
+    display: block;
+    margin-bottom: 3.5em;
+    background-image: url(assets/graphic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 15em -2em;
+    .hero-information{
+        padding-right: 35%;
+    .subhead {
+        @include LaunchingSoon;
+        }
+    .primary-cta {
+        @include SignUp;
+        }
+    p {
+        padding-bottom: 2em;
+        color: $dark3;
+        font-size: larger;
+        }
+    }
+}
+.promo {
+    h2 {
+        font-weight: 500;
+        font-size: 48px;
+    }
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-image: url(assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 24px;
+    font-weight: 400;
+}
+.companies {
+    margin-left: 2em;
+    .container{
+    display: grid;
+    grid: auto auto / auto auto;
+    gap: 25px;
+    }
+    .OpenDoor {
+    display: none;
+    }
+}
+.auction-description{
+    margin-left: 2em;
+}
+.NFTS {
+    overflow-x:auto;
+
+    ul {
+        display: flex;
+        li{  
+         width: 290px;
+         margin: 0px 20px;
+         img {
+            margin: 0;
+            padding: 0;
+         }
+        }
+
+        .NFT-info .left-column{
+            color: $dark3;
+            font-size: small;
+            span {
+                color: $orange;
+            }
+            .name-price{
+                color: $dark1;
+                font-size: large;
+            }
+        }
+        .NFT-info .right-column{
+            span {color: $dark1;
+                font-size: large;
+            }
+            img {
+                margin-right: 0px;
+            }
+            p{
+                color: $dark3;
+                font-size: small;    
+            }
+        }
+    }
+
+    .NFT-info{
+        background-color: $light2;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        height: 120px;
+        max-width: 270px;
+        display: flex;
+        justify-content: space-between;  
+        padding: 0 10px;
+    }
+}
+.auction-description{
+    h2{
+        font-size: 48px;
+        font-weight: 400;
+    }
+    ul {
+        padding: 0;
+    }
+    ul :first-child {
+        margin-left: 0;
+    }
+}
+.Launching-soon {
+    display: flex;
+    margin-bottom: 1.5em;
+    background-image: url(assets/upsell-footer-image.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 18em 10px;
+    border-top: solid 1px $light2;
+    border-bottom: solid 1px $light2;
+
+    .hero-information{
+        padding-right: 40%;
+    }
+    .subhead {
+        @include LaunchingSoon;
+    }
+    .primary-cta {
+        @include SignUp;
+    }
+    p {
+        padding-bottom: 2em;
+        color: $dark3;
+    }
+}
+.contact {
+    margin-bottom: 10px;
+    padding: 10px;
+    p {
+        color: $dark3;
+    }
+    img {
+        padding: 5px;
+    }
+}
+.Links {
+    display: inline-block;
+    table {
+        border-collapse: separate;
+        border-spacing: 50px 0;
+      }
+    th {
+        color: $dark3;
+        padding: 10px 0px;
+    }
+    td, tr {
+        color: $dark3;
+        padding: 10px 0px;
+    }
+}
+.legal {
+    margin-left: 2em;
+    p {
+        color: $light3;
+        padding-bottom: 50px;
+    }
+    span {
+        display: none;
+    }
+    
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background-image: url(assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 1em;
+
+    li {
+       a {color: $dark1;
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        font-size: 1.3em;
+        text-align: right;
+
+        &:hover {
+            font-weight: bold;
+        }
+       }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar img {
+        position: fixed;
+        margin-left: 2em;
+    }
+
+    .navbar nav {
+        display: flex;
+        background: none;
+        justify-content: flex-end;
+    }
+
+    ul{
+        display: flex;
+        margin-top: 0;
+        margin-right: 1em;
+        a{
+            color: $dark3;
+        }
+    }    
+
+    .Sign-up-cta {
+        color: $pink;
+    }
+
+    .hero {
+        display: block;
+        margin-left: 2em;
+        margin-bottom: 3.5em;
+        background-image: url(assets/graphic.png);
+        background-repeat: no-repeat;
+        background-size: 30em;
+        background-position: 70% 40%;
+        .hero-information{
+            padding-right: 50%;
+        .subhead {
+            @include LaunchingSoon;
+            }
+        .primary-cta {
+            @include SignUp;
+            }
+        p {
+            padding-bottom: 2em;
+            color: $dark3;
+            font-size: larger;
+            }
+        h1 {
+            font-size: 72px;
+            }    
+        }
+    }
+
+    .promo {
+        h2 {
+            font-weight: 500;
+            font-size: 48px;
+        }
+        margin: 2em;
+        background-image: url(assets/background.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: justify;
+        font-size: 24px;
+        font-weight: 400;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+        padding-top: 4em;
+        padding-left: 2em;
+    }
+
+    .companies {
+        .container{
+        margin-left: 2em;   
+        margin-right: 2em; 
+        display: flex;
+        justify-content: space-between;
+        .OpenDoor{
+            display: flex;
+            }
+        }
+    }
+
+    .auction {
+        margin-left: 2em;
+    }
+
+    .Launching-soon {
+        margin-left: 2em;
+        margin-bottom: 1.5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background-image: url(assets/upsell-footer-image.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 60% 80%;
+        border-top: solid 1px $light2;
+        border-bottom: solid 1px $light2;
+    
+        .hero-information{
+            padding-right: 55%;
+        }
+        .subhead {
+            @include LaunchingSoon;
+        }
+        .primary-cta {
+            @include SignUp;
+        }
+        p {
+            padding-bottom: 2em;
+            color: $dark3;
+        }
+    }
+
+    .More-information {
+        display: grid;
+        grid-template-columns: auto auto;
+        .Links {
+            display: flex;
+        }
+    }
+
+    .legal {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2em;
+        p {
+            padding-bottom: 50px;
+            color: $light3
+        }
+        span {
+            display: flex;
+            color: $light3
+        }
+    }
+}
